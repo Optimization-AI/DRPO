@@ -9,7 +9,6 @@ MODEL_PATH="deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
 # Train over a single node, 8 A100-80GB GPUs.
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
-    +algorithm.alpha=0.05 \
     algorithm.filter_groups.enable=False \
     data.train_files=./datasets/deepscaler/data/train.parquet \
     data.val_files=./datasets/deepscaler/data/aime.parquet \
