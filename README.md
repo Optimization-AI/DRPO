@@ -107,14 +107,14 @@ bash ./scripts/train/run_drpo_1.5b_8k.sh
 
 Our evaluation scripts automatically runs vLLM to generate 16 samples for each problem. To run our evaluation scripts, run:
 ```bash
-./scripts/eval/eval_model.sh --model [CHECKPOINT_PATH] --datasets [DATASET1] [DATASET2] --output-dir [OUTPUT_DIR]
+bash ./scripts/eval/eval_model.sh --model [CHECKPOINT_PATH] --datasets [DATASET1] [DATASET2] --output-dir [OUTPUT_DIR]
 ```
 
 We report Pass@1 accuracy averaged over 16 samples for each problem. To replicate our reported numbers, for example, run:
 
 ```bash
-./scripts/eval/eval_model.sh --model ganglii/DRPO-1.5B --datasets aime aime25 olympiad_bench math gsm8k --output-dir ./val_results/DRPO-1.5B
-
+bash ./scripts/eval/eval_model.sh --model ganglii/DRPO-1.5B --datasets aime aime25 olympiad_bench math gsm8k --output-dir ./val_results/DRPO-1.5B
+```
 
 ## Acknowledgements
 - Our training pipeline is built on the Github repository [DeepScaleR](https://github.com/agentica-project/rllm/tree/deepscaler) with [Verl](https://github.com/volcengine/verl) framework. We thank the authors for open-sourcing their code.
@@ -122,10 +122,10 @@ We report Pass@1 accuracy averaged over 16 samples for each problem. To replicat
 
 
 
-
+<!-- 
 ## Citing DRPO
 
-<!-- If you find DisCO useful in your research, please consider citing the following paper:
+If you find DisCO useful in your research, please consider citing the following paper:
 ```bibtex
 @article{li2025disco,
   title={DisCO: Reinforcing Large Reasoning Models with Discriminative Constrained Optimization},
