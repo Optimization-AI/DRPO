@@ -81,7 +81,7 @@ if __name__ == '__main__':
     # Initialize datasets
     train_datasets = [TrainDataset.DEEPSCALER]
     train_dataset = load_dataset(train_datasets[0])
-    test_datasets = [TestDataset.AIME, TestDataset.AIME25, TestDataset.AMC, TestDataset.MATH, TestDataset.MINERVA, TestDataset.OLYMPIAD_BENCH]
+    test_datasets = [TestDataset.AIME, TestDataset.AIME25, TestDataset.AMC, TestDataset.MATH, TestDataset.MINERVA, TestDataset.OLYMPIAD_BENCH, TestDataset.GSM8K]
     
     test_datasets_data = [load_dataset(d) for d in test_datasets]
 

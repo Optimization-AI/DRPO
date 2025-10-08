@@ -158,6 +158,7 @@ def main(config):
     passes = 0
     total = len(dataset)
     total_scores = []
+    total_lens = []
     
     for i in range(total):
         response_lst = responses[i]
@@ -170,6 +171,8 @@ def main(config):
         for r in response_lst:
             score = reward_fn(r, ground_truth)
             score_lst.append(score)
+            tokens = tokenizer(r, add_special_tokens=False)
+            total_lens.append(len(tokens["input_ids"]))
         max_score = np.max(score_lst)
         total_scores.append(score_lst)
         if max_score == 1:
@@ -178,6 +181,7 @@ def main(config):
     n_samples = config.data.n_samples
     pass_at_n = passes / total
     pass_at_1 = np.mean(total_scores)
+    ave_length = int(np.mean(total_lens))
 
     # Save metrics to CSV
     csv_path = os.path.join(output_dir, 'pass.csv')
@@ -189,7 +193,8 @@ def main(config):
         'model_path': config.model.path,
         'dataset': dataset_name,
         'pass@1': pass_at_1,
-        f'pass@{n_samples}': pass_at_n
+        f'pass@{n_samples}': pass_at_n,
+        'length': ave_length,
     }
 
     # Check if file exists
