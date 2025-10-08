@@ -37,7 +37,8 @@ Comparison of performance-efficiency trade-off.  Left is for fine-tuning 1.5B mo
 
 
 ## Model Checkpoints
-
+- DRPO finetuned DeepSeek-R1-Distill-Qwen-1.5B Model: [DRPO-1.5B](https://huggingface.co/ganglii/DRPO-1.5B)
+- DRPO finetuned DeepSeek-R1-Distill-Qwen-7B Model: [DRPO-7B](https://huggingface.co/ganglii/DRPO-7B)
 
 
 
@@ -109,11 +110,11 @@ Our evaluation scripts automatically runs vLLM to generate 16 samples for each p
 ./scripts/eval/eval_model.sh --model [CHECKPOINT_PATH] --datasets [DATASET1] [DATASET2] --output-dir [OUTPUT_DIR]
 ```
 
-<!-- We report Pass@1 accuracy averaged over 16 samples for each problem. To replicate our reported numbers, for example, run:
+We report Pass@1 accuracy averaged over 16 samples for each problem. To replicate our reported numbers, for example, run:
 
 ```bash
-./scripts/eval/eval_model.sh --model ganglii/DisCO-1.5B-logL --datasets aime aime25 math amc minerva olympiad_bench --output-dir ./val_results/DisCO-1.5B-logL
-``` -->
+./scripts/eval/eval_model.sh --model ganglii/DRPO-1.5B --datasets aime aime25 olympiad_bench math gsm8k --output-dir ./val_results/DRPO-1.5B
+
 
 ## Acknowledgements
 - Our training pipeline is built on the Github repository [DeepScaleR](https://github.com/agentica-project/rllm/tree/deepscaler) with [Verl](https://github.com/volcengine/verl) framework. We thank the authors for open-sourcing their code.
