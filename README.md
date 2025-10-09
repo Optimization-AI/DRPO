@@ -122,16 +122,15 @@ bash ./scripts/eval/eval_model.sh --model ganglii/DRPO-1.5B --datasets aime aime
 
 
 
-<!-- 
 ## Citing DRPO
 
-If you find DisCO useful in your research, please consider citing the following paper:
+If you find DRPO useful in your research, please consider citing the following paper:
 ```bibtex
-@article{li2025disco,
-  title={DisCO: Reinforcing Large Reasoning Models with Discriminative Constrained Optimization},
-  author={Li, Gang and Lin, Ming and Galanti, Tomer and Tu, Zhengzhong and Yang, Tianbao},
-  journal={arXiv preprint arXiv:2505.12366},
+@article{li2025drpo,
+  title={DRPO: Efficient Reasoning via Decoupled Reward Policy Optimization},
+  author={Li, Gang and Chen, Yan and Lin, Ming and Yang, Tianbao},
+  journal={arXiv preprint arXiv:2510.04474},
   year={2025}
 }
-``` -->
+
 
