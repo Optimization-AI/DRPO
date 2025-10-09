@@ -37,8 +37,8 @@ Comparison of performance-efficiency trade-off.  Left is for fine-tuning 1.5B mo
 
 
 ## Model Checkpoints
-- DRPO finetuned DeepSeek-R1-Distill-Qwen-1.5B Model: [DRPO-1.5B](https://huggingface.co/ganglii/DRPO-1.5B)
-- DRPO finetuned DeepSeek-R1-Distill-Qwen-7B Model: [DRPO-7B](https://huggingface.co/ganglii/DRPO-7B)
+- DRPO finetuned DeepSeek-R1-Distill-Qwen-1.5B Model: [DRPO-1.5B-Lambda-0.1](https://huggingface.co/ganglii/DRPO-1.5B)
+- DRPO finetuned DeepSeek-R1-Distill-Qwen-7B Model: [DRPO-7B-Lambda-0.1](https://huggingface.co/ganglii/DRPO-7B)
 
 
 
