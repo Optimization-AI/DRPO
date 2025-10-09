@@ -775,8 +775,7 @@ class RayPPOTrainer(object):
                                                   gamma=self.config.algorithm.gamma,
                                                   lam=self.config.algorithm.lam,
                                                   num_repeat=self.config.actor_rollout_ref.rollout.n,
-                                                  buffer_len=self.config.reward_model.overlong_buffer_len,
-                                                  )
+                                                  buffer_len=self.config.reward_model.overlong_buffer_len,)
 
                     # balance the number of valid tokens on each dp rank.
                     # Note that this breaks the order of data inside the batch.
