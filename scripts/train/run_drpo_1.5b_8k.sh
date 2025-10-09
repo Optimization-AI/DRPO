@@ -32,7 +32,7 @@ python3 -m verl.trainer.main_ppo \
     actor_rollout_ref.actor.delta=1e-4 \
     actor_rollout_ref.actor.beta=1e3 \
     actor_rollout_ref.actor.tau=10 \
-    +actor_rollout_ref.actor.tau2=0.1 \
+    +actor_rollout_ref.actor.Lambda=0.1 \
     actor_rollout_ref.actor.entropy_coeff=0.0 \
     actor_rollout_ref.actor.loss_type=drpo  \
     actor_rollout_ref.actor.ulysses_sequence_parallel_size=1 \

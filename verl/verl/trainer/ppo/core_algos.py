@@ -334,7 +334,7 @@ def compute_policy_loss_disco_logL(old_log_prob, log_prob, advantages, eos_mask,
 
     return pg_loss, pg_clipfrac, ppo_kl
 
-def compute_policy_loss_drpo(old_log_prob, log_prob, eos_mask, uid, seq_level_rewards, delta, beta, tau, tau2, kl_type='low_var_kl'):
+def compute_policy_loss_drpo(old_log_prob, log_prob, eos_mask, uid, seq_level_rewards, delta, beta, tau, Lambda, kl_type='low_var_kl'):
     """
 
     Args:
@@ -419,7 +419,7 @@ def compute_policy_loss_drpo(old_log_prob, log_prob, eos_mask, uid, seq_level_re
 
         neg_logmeanexp = neg_sum_exp / (neg_sum_exp.detach()+torch.finfo(neg_sum_exp.dtype).eps)
 
-        weight = torch.exp((1-grouped_length_ratio)/tau2)
+        weight = torch.exp((1-grouped_length_ratio)/Lambda)
         pg_losses = (weight*(grouped_scores - tau*neg_logmeanexp)*pos_mask
                      ).sum(dim=1, keepdim=True) / (weight*pos_mask).sum(dim=1, keepdim=True)
         

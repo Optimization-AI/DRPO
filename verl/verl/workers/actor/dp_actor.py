@@ -283,7 +283,7 @@ class DataParallelPPOActor(BasePPOActor):
                                                                                     delta=delta,
                                                                                     beta=beta,
                                                                                     tau=tau,
-                                                                                    tau2=self.config.tau2,
+                                                                                    Lambda=self.config.Lambda,
                                                                                     kl_type=kl_type)
                     else:
                         pg_loss, pg_clipfrac, ppo_kl = core_algos.compute_policy_loss(old_log_prob=old_log_prob,
