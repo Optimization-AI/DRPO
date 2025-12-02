@@ -48,7 +48,7 @@ Comparison of performance-efficiency trade-off.  Left is for fine-tuning 1.5B mo
 # Recommend Python 3.10.
 conda create -n drpo python=3.10
 conda activate drpo
-git clone https://github.com/Optimization-AI/DisCO.git
+git clone https://github.com/Optimization-AI/DRPO.git
 cd DRPO
 pip install -e ./verl
 pip install -e ./deepscaler
