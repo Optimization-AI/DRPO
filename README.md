@@ -20,7 +20,7 @@ While existing methods incorporate **length rewards** to GRPO to promote concise
 ### 📈 Quick Results
 
 
-Comparison of performance-efficiency trade-off.  Left is for fine-tuning 1.5B model and right is for fine-tuning 7B model. Grey lines represent the base model performance before finetuning, with generation length of 4698 for 1.5B model and 4119 for 7B model. Squares denote models trained with reference methods without length penalties (i.e., $\lambda$=+$\infty$ for DRPO, $\alpha=0$ for RLOO-LP, $\beta=0$ for ALP, $w=0$ for HAPO). Triangles denote the models trained by other works. 
+Comparison of performance-efficiency trade-off.  Left is for fine-tuning 1.5B model and right is for fine-tuning 7B model. Grey lines represent the base model performance before finetuning, with generation length of 4698 for 1.5B model and 4119 for 7B model. Squares denote models trained with reference methods without length penalties (i.e., $\lambda$=+ $\infty$ for DRPO, $\alpha=0$ for RLOO-LP, $\beta=0$ for ALP, $w=0$ for HAPO). Triangles denote the models trained by other works. 
 
 <p align="center"><img alt="Comparison with baselines on 1.5B model" src="./assets/comp.png" width="800"/></p>
 
