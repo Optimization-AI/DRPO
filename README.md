@@ -3,7 +3,7 @@
 
 
 
-📢 **[Sep 2025]:**
+📢 **[Jan 2026]:**
 Our paper "DRPO: Efficient Reasoning via Decoupled Reward Policy Optimization" has been **accepted to ICLR 2026** 🎉.
 
 
