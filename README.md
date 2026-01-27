@@ -1,13 +1,14 @@
 <h1 align="center">🚀 DRPO: Efficient Reasoning via Decoupled Reward Policy Optimization</h1>
 
 
-Paper link: [arXiv](https://arxiv.org/abs/2510.04474)
 
 
+📢 **[Sep 2025]:**
+Our paper "DRPO: Efficient Reasoning via Decoupled Reward Policy Optimization" has been **accepted to ICLR 2026** 🎉.
 
 
 ---
-
+Paper link: [arXiv](https://arxiv.org/abs/2510.04474)
 
 ### 🔍 Why **DRPO ?** - *Decoupled Reward Policy Optimization* 
 
