@@ -38,6 +38,10 @@ Comparison of performance-efficiency trade-off.  Left is for fine-tuning 1.5B mo
 
 
 ## Model Checkpoints
+Since models with `Lambda=0.2` and `Lambda=0.5` were reproduced to facilitate comparisons with our method, their performance may differ slightly from the results reported in the paper.
+
+
+We reproduced the models with Lambda = 0.2 and Lambda = 0.5 to facilitate comparisons with our method. As a result, their performance may differ slightly from the results reported in the paper.
 - DRPO finetuned DeepSeek-R1-Distill-Qwen-1.5B Model: [DRPO-1.5B-Lambda-0.1](https://huggingface.co/ganglii/DRPO-1.5B)
 - DRPO finetuned DeepSeek-R1-Distill-Qwen-1.5B Model: [DRPO-1.5B-Lambda-0.2](https://huggingface.co/ganglii/DRPO-1.5B-Lambda-0.2)
 - DRPO finetuned DeepSeek-R1-Distill-Qwen-1.5B Model: [DRPO-1.5B-Lambda-0.5](https://huggingface.co/ganglii/DRPO-1.5B-Lambda-0.5)
@@ -60,7 +64,6 @@ pip install -e ./deepscaler
 pip install wandb
 ```
 
-```
 If the above commands fail to install `flash_attn==2.7.3`, please try installing  it separately with the following command:
 ```bash
 pip install https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.3/flash_attn-2.7.3%2Bcu12torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
